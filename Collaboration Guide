@@ -1,0 +1,64 @@
+This project uses **branches** so everyone can work safely.
+
+🚫 **Do NOT push to `main`**  
+✅ You will work only on **your own branch** (created by the project owner).
+
+---
+
+## 1️⃣ Clone the Project (Only Once)
+
+```bash
+git clone https://github.com/ilyessdridi/pathFinders-RH.git
+cd pathFinders-RH
+
+
+ ## 2️⃣ Get the Latest Branches
+git fetch origin
+
+##3️⃣ Go to Your Branch
+The project owner(ilyess dridi ) will tell you your branch name
+(example: fedi).
+
+git checkout feature-login
+
+ ----- If Git says the branch does not exist locally:
+
+git checkout -b fedi origin/fedi
+
+  ###4️⃣ Work on the Project
+
+Edit files normally.
+
+Check what you changed:
+
+git status
+
+###5️⃣ Save Your Work (Commit)
+git add .
+git commit -m "Explain what you changed"
+
+
+Example:
+
+git commit -m "Create login page"
+  (ekteb commits pro eli bech ykhaliwna baad nefhmou rwehna ki tabda fama errors wla theb tarjaa el version kdima taa el code ) 
+
+###6️⃣Send Your Work to GitHub (Push)
+git push origin feature-login
+
+  ❓ Do I Need to Merge main?
+
+👉 YES, sometimes (to stay up to date).
+
+Before starting new work, do this:
+
+git checkout main
+git pull origin main
+git checkout fedi
+git merge main
+
+
+This updates your branch with the latest changes from main.
+
+⚠️ If there are conflicts, ask the project owner before continuing.
+  
